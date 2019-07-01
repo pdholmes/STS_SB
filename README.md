@@ -51,3 +51,16 @@ Once finished, call `display_results` to display the accuracy of each of the tes
 
 ### Plotting
 *update this section*
+
+## Team
+- Patrick Holmes (PhD Candidate, Mechanical Engineering, University of Michigan)
+
+- Shannon Danforth (PhD Candidate, Mechanical Engineering, University of Michigan)
+
+- Xiao-Yu Fu (PhD Candidate, Mechanical Engineering, University of Michigan)
+- Talia Y. Moore (Post-doctoral Researcher, Department of Ecology and Evolutionary Biology, Museum of Zoology, University of Michigan)
+- Ram Vasudevan (Assistant Professor, Mechanical Engineering, University of Michigan)
+
+## License
+- [BSD3](https://opensource.org/licenses/BSD-3-Clause)
+
