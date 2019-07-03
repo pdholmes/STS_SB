@@ -18,7 +18,7 @@ classdef AbstractAnimator < handle
     
     properties (Access = public)
         isLooping logical
-        pov Animator.AnimatorPointOfView
+%         pov Animator.AnimatorPointOfView
         
         startTime double
         endTime double
@@ -63,7 +63,7 @@ classdef AbstractAnimator < handle
             
 %             obj.TimerDelta = round(1/30,3);
             obj.TimerDelta = round(1/15, 3);
-            obj.pov = Animator.AnimatorPointOfView.Free;
+%             obj.pov = Animator.AnimatorPointOfView.Free;
             
             obj.tmr = timer;
             obj.tmr.Period = obj.TimerDelta;
@@ -154,34 +154,34 @@ classdef AbstractAnimator < handle
             hAngle = 0;
             vAngle = 0;
             
-            switch(obj.pov)
-                case Animator.AnimatorPointOfView.North
-                    hAngle = hAngle + 0;
-                case Animator.AnimatorPointOfView.South
-                    hAngle = hAngle + 180;
-                case Animator.AnimatorPointOfView.East
-                    hAngle = hAngle - 90;
-                case Animator.AnimatorPointOfView.West
-                    hAngle = hAngle + 90;
-                case Animator.AnimatorPointOfView.Front
-                    hAngle = hAngle + yaw;
-                case Animator.AnimatorPointOfView.Back
-                    hAngle = hAngle + 180 + yaw;
-                case Animator.AnimatorPointOfView.Left
-                    hAngle = hAngle - 90 + yaw;
-                case Animator.AnimatorPointOfView.Right
-                    hAngle = hAngle + 90 + yaw;
-                case Animator.AnimatorPointOfView.TopSouthEast
-                    hAngle = hAngle + 225;
-                    vAngle = vAngle + 45;
-                case Animator.AnimatorPointOfView.TopFrontLeft
-                    hAngle = hAngle + 225 + yaw;
-                    vAngle = vAngle + 45;
-            end
-            
-            if obj.pov ~= Animator.AnimatorPointOfView.Free
-                view(obj.axs, hAngle, vAngle);
-            end
+%             switch(obj.pov)
+%                 case Animator.AnimatorPointOfView.North
+%                     hAngle = hAngle + 0;
+%                 case Animator.AnimatorPointOfView.South
+%                     hAngle = hAngle + 180;
+%                 case Animator.AnimatorPointOfView.East
+%                     hAngle = hAngle - 90;
+%                 case Animator.AnimatorPointOfView.West
+%                     hAngle = hAngle + 90;
+%                 case Animator.AnimatorPointOfView.Front
+%                     hAngle = hAngle + yaw;
+%                 case Animator.AnimatorPointOfView.Back
+%                     hAngle = hAngle + 180 + yaw;
+%                 case Animator.AnimatorPointOfView.Left
+%                     hAngle = hAngle - 90 + yaw;
+%                 case Animator.AnimatorPointOfView.Right
+%                     hAngle = hAngle + 90 + yaw;
+%                 case Animator.AnimatorPointOfView.TopSouthEast
+%                     hAngle = hAngle + 225;
+%                     vAngle = vAngle + 45;
+%                 case Animator.AnimatorPointOfView.TopFrontLeft
+%                     hAngle = hAngle + 225 + yaw;
+%                     vAngle = vAngle + 45;
+%             end
+%             
+%             if obj.pov ~= Animator.AnimatorPointOfView.Free
+%                 view(obj.axs, hAngle, vAngle);
+%             end
         end
     end
     
