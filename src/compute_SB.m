@@ -8,8 +8,8 @@ function [ ] = compute_SB(subject, nominal_sts_type, options)
 %   standing set, then using CORA to find the backwards reachable set of
 %   the standing set under the controller model and dynamics.
 
-% if "direct" method used, no reachability analysis is done.
-if strcmp(options.basintype, 'direct')
+% if "naive" method used, no reachability analysis is done.
+if strcmp(options.basintype, 'naive')
     compute_SB_direct(subject, nominal_sts_type, options);
     return;
 end

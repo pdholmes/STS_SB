@@ -19,7 +19,7 @@ end
 build_table_results('BFFFB');
 build_table_results('LQR');
 build_table_results('FFFB');
-build_table_results('direct');
+build_table_results('naive');
 
 end
 

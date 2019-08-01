@@ -24,10 +24,10 @@ evaluate_SB(subject, 'MT', 'FFFB');
 evaluate_SB(subject, 'N',  'FFFB');
 evaluate_SB(subject, 'QS',  'FFFB');
 
-% for 'direct' method:
-evaluate_SB(subject, 'MT', 'direct');
-evaluate_SB(subject, 'N',  'direct');
-evaluate_SB(subject, 'QS',  'direct');
+% for 'naive' method:
+evaluate_SB(subject, 'MT', 'naive');
+evaluate_SB(subject, 'N',  'naive');
+evaluate_SB(subject, 'QS',  'naive');
 
 end
 

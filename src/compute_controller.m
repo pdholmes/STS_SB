@@ -13,7 +13,7 @@ switch options.basintype
         compute_controller_LQR(subject, nominal_sts_type, options);
     case 'FFFB'
         compute_controller_FFFB(subject, nominal_sts_type, options);
-    case 'direct'
+    case 'naive'
         % no controller is necessary for 'direct' basin type.
         return
     otherwise

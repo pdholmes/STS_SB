@@ -7,7 +7,7 @@ function [ ] = evaluate_SB( varargin )
 %
 %   EVALUATE_SB(subject, nominal_sts_type, basintype) generates results for
 %   the controller specified by 'basintype'. Options are:
-%   'BFFFB','FFFB','LQR','direct'.
+%   'BFFFB','FFFB','LQR','naive'.
 
 % This will run through all of the trials for each strategy type and for
 % each subject.

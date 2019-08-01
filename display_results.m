@@ -8,7 +8,7 @@ dispon = 1;
 dispCPon = 0;
 
 nominal_sts_types = {'MT', 'N', 'QS'};
-basintypes = {'BFFFB', 'LQR', 'FFFB', 'direct'};
+basintypes = {'BFFFB', 'LQR', 'FFFB', 'naive'};
 for j = 1:length(basintypes)
     basintype = basintypes{j};
     disp('Basin type:');
