@@ -41,7 +41,7 @@ These predictions are compared to experimentally observed results.
 - To simply view presaved results of the SB evaluation in a table, use `display_results()`.
 
 - A GUI for visualizing the STS trials, the SBs, and their predictions is provided. To run this GUI, use `animateSTS`.
-* ADD GIF OF GUI *
+![](https://github.com/pdholmes/STS_SB/blob/master/images/GUI_example.png "GUI for visualizing STS results")
 ## Generating Results from Scratch
 If you would like to run the full pipeline and generate the results from scratch on your own machine:
 1) Run `setPaths()`.
