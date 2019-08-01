@@ -37,21 +37,17 @@ These predictions are compared to experimentally observed results.
 - To use this code, first download CORA 2018: https://tumcps.github.io/CORA/
 
 - We also recommend using MOSEK (https://www.mosek.com) in place of MATLAB's default linear program solver `linprog`, though this is not necessary.
+## GUI
+- To simply view presaved results of the SB evaluation in a table, use `display_results()`.
 
-## Usage
-First, run `setPaths()`.
-
-
-To simply view presaved results of the SB evaluation, use `display_results('presaved')`.
-
-If instead you would like to run the full pipeline and generate results from scratch, use `run_all()`.
-We recommend calling `run_all('parallel')` to utilize MATLAB's parfor toolbox and expedite the process.
-
-Once finished, call `display_results` to display the accuracy of each of the tested SB methods onscreen.
-
-### Plotting
-*update this section*
-
+- A GUI for visualizing the STS trials, the SBs, and their predictions is provided. To run this GUI, use `animateSTS`.
+* ADD GIF OF GUI *
+## Generating Results from Scratch
+If you would like to run the full pipeline and generate the results from scratch on your own machine:
+1) Run `setPaths()`.
+2) Use `run_all()`. We recommend calling `run_all('parallel')` to utilize MATLAB's parfor toolbox and expedite the process.
+3) Uncomment line 5 in `display_results` and line 5 in `animateSTS` to use your locally generated results instead of the presaved results.
+4) Call `display_results` or `animateSTS` to display the accuracy of each of the tested SB methods onscreen.
 ## Team
 - Patrick Holmes (PhD Candidate, Mechanical Engineering, University of Michigan)
 
@@ -63,4 +59,3 @@ Once finished, call `display_results` to display the accuracy of each of the tes
 
 ## License
 - [BSD3](https://opensource.org/licenses/BSD-3-Clause)
-
