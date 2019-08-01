@@ -1,6 +1,7 @@
 
 datapath = 'presaved';
- % uncomment this to use local (not presaved) results
+
+% uncomment this to use local (not presaved) results
 % datapath = '';
 
 anim = Animator.STSAnimator(datapath);
