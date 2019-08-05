@@ -28,7 +28,7 @@ The SB is the *backwards reachable set* of a standing set, under the model's dyn
 Finally, we evaluate the accuracy of SBs by using them to predict whether or not an STS trial will succeed or fail (e.g., the subject will take a step or sit).
 These predictions are compared to experimentally observed results.
 
-![](https://github.com/pdholmes/STS_SB/blob/master/images/JRSI_basin_step.png "SB predicts step will occur")
+![](https://github.com/pdholmes/STS_SB/blob/master/images/basin_step.png "SB predicts step will occur")
 
 ## Installation
 ### Clone
