@@ -112,8 +112,8 @@ dx(4,1) = mydynamics(2);
 
 dx = simplify(dx);
 
-matlabFunction(dx, 'File', sprintf('dynamics_functions/dyn_subject%s_TIPM_BFFFB', subject), 'vars', {t, x, u});
-matlabFunction(-dx, 'File', sprintf('dynamics_functions/dyn_subject%s_TIPM_BFFFB_backwards', subject), 'vars', {t, x, u});
+matlabFunction(dx, 'File', sprintf('dynamics_functions/dyn_subject%s_TIPM_InputBounds', subject), 'vars', {t, x, u});
+matlabFunction(-dx, 'File', sprintf('dynamics_functions/dyn_subject%s_TIPM_InputBounds_backwards', subject), 'vars', {t, x, u});
 
 end
 

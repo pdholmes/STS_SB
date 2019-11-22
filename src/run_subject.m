@@ -9,10 +9,10 @@ create_dynamics(subject);
 
 % Evaluate the SBs for each subject, STS strategy, and basin type:
 
-% for BFF+FB controller:
-evaluate_SB(subject, 'MT', 'BFFFB');
-evaluate_SB(subject, 'N',  'BFFFB');
-evaluate_SB(subject, 'QS',  'BFFFB');
+% for Input Bounds controller:
+evaluate_SB(subject, 'MT', 'InputBounds');
+evaluate_SB(subject, 'N',  'InputBounds');
+evaluate_SB(subject, 'QS',  'InputBounds');
 
 %for LQR controller:
 evaluate_SB(subject, 'MT', 'LQR');

@@ -16,7 +16,7 @@ else
 end
 
 % finally, build the results tables for each controller type
-build_table_results('BFFFB');
+build_table_results('InputBounds');
 build_table_results('LQR');
 build_table_results('FFFB');
 build_table_results('naive');

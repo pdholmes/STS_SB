@@ -2,12 +2,12 @@ function [ ] = evaluate_SB( varargin )
 % EVALUATE_SB generates the SB results for a specific subject, nominal sts
 % type, and controller type
 %
-%   EVALUATE_SB(subject, nominal_sts_type) generates results for the BFF+FB
+%   EVALUATE_SB(subject, nominal_sts_type) generates results for the Input Bounds
 %   controller
 %
 %   EVALUATE_SB(subject, nominal_sts_type, basintype) generates results for
 %   the controller specified by 'basintype'. Options are:
-%   'BFFFB','FFFB','LQR','naive'.
+%   'InputBounds','FFFB','LQR','naive'.
 
 % This will run through all of the trials for each strategy type and for
 % each subject.
@@ -28,9 +28,9 @@ switch nargin
     case 2
         subject = varargin{1};
         nominal_sts_type = varargin{2};
-        % if no basin type specified, default is BFF+FB
-        basintype = 'BFFFB';
-        disp('Using BFF + FB basin type by default. To test another basin type, specify third argument')
+        % if no basin type specified, default is Input Bounds
+        basintype = 'InputBounds';
+        disp('Using Input Bounds basin type by default. To test another basin type, specify third argument')
     case 3
         subject = varargin{1};
         nominal_sts_type = varargin{2};

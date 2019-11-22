@@ -7,8 +7,8 @@ function [ ] = compute_controller( subject, nominal_sts_type, options )
 % options.basintype
 
 switch options.basintype
-    case 'BFFFB'
-        compute_controller_BFFFB(subject, nominal_sts_type, options);
+    case 'InputBounds'
+        compute_controller_InputBounds(subject, nominal_sts_type, options);
     case 'LQR'
         compute_controller_LQR(subject, nominal_sts_type, options);
     case 'FFFB'

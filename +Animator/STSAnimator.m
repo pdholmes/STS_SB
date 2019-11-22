@@ -52,11 +52,11 @@ classdef STSAnimator < Animator.AbstractAnimator
             obj.info.subject = '1';
             obj.info.strategy = 'N';
             obj.info.trial = 'N_1';
-            obj.info.SBtype = 'BFFFB';
+            obj.info.SBtype = 'InputBounds';
             
             obj.traj_data = load(sprintf('STS_trajectories/subject%s/subject%s_trajectories_%s.mat', obj.info.subject, obj.info.subject, obj.info.strategy));
-            obj.SB_data = load(sprintf('%s/stability_basins/subject%s/subject%s_%s_basin_%s.mat', obj.datapath, obj.info.subject, obj.info.subject, obj.info.strategy, obj.info.SBtype));
-            obj.results_data =  load(sprintf('%s/total_results/total_results_%s.mat', obj.datapath, obj.info.SBtype));
+            obj.SB_data = load(sprintf('%sstability_basins/subject%s/subject%s_%s_basin_%s.mat', obj.datapath, obj.info.subject, obj.info.subject, obj.info.strategy, obj.info.SBtype));
+            obj.results_data =  load(sprintf('%stotal_results/total_results_%s.mat', obj.datapath, obj.info.SBtype));
 
             obj.trial_list = obj.traj_data.traj_metadata.sts_type;
             
@@ -84,7 +84,7 @@ classdef STSAnimator < Animator.AbstractAnimator
             if ~strcmp(obj.info.subject, GUIinfo.subject) || ~strcmp(obj.info.strategy, GUIinfo.strategy)
                 obj.info = GUIinfo;
                 obj.traj_data = load(sprintf('STS_trajectories/subject%s/subject%s_trajectories_%s.mat', obj.info.subject, obj.info.subject, obj.info.strategy));
-                obj.SB_data = load(sprintf('%s/stability_basins/subject%s/subject%s_%s_basin_%s.mat', obj.datapath, obj.info.subject, obj.info.subject, obj.info.strategy, obj.info.SBtype));
+                obj.SB_data = load(sprintf('%sstability_basins/subject%s/subject%s_%s_basin_%s.mat', obj.datapath, obj.info.subject, obj.info.subject, obj.info.strategy, obj.info.SBtype));
                 obj.trial_list = obj.traj_data.traj_metadata.sts_type;
                 obj.info.trial = obj.trial_list{1};
                 mytrajidx = find(strcmp(obj.info.trial, obj.trial_list));
@@ -99,8 +99,8 @@ classdef STSAnimator < Animator.AbstractAnimator
             
             if ~strcmp(obj.info.SBtype, GUIinfo.SBtype)
                 obj.info.SBtype = GUIinfo.SBtype;
-                obj.SB_data = load(sprintf('%s/stability_basins/subject%s/subject%s_%s_basin_%s.mat', obj.datapath, obj.info.subject, obj.info.subject, obj.info.strategy, obj.info.SBtype));
-                obj.results_data =  load(sprintf('%s/total_results/total_results_%s.mat', obj.datapath, obj.info.SBtype));
+                obj.SB_data = load(sprintf('%sstability_basins/subject%s/subject%s_%s_basin_%s.mat', obj.datapath, obj.info.subject, obj.info.subject, obj.info.strategy, obj.info.SBtype));
+                obj.results_data =  load(sprintf('%stotal_results/total_results_%s.mat', obj.datapath, obj.info.SBtype));
                 obj.updateSB(obj.currentTime);
             end
             

@@ -1,6 +1,6 @@
 function [ ] = display_results()
 
-datapath = 'presaved';
+datapath = 'presaved/';
 % uncomment the following to use local (not presaved) results
 % datapath = '';
 
@@ -8,12 +8,12 @@ dispon = 1;
 dispCPon = 0;
 
 nominal_sts_types = {'MT', 'N', 'QS'};
-basintypes = {'BFFFB', 'LQR', 'FFFB', 'naive'};
+basintypes = {'InputBounds', 'LQR', 'FFFB', 'naive'};
 for j = 1:length(basintypes)
     basintype = basintypes{j};
     disp('Basin type:');
     disp(basintype);
-    load(sprintf('%s/total_results/total_results_%s', datapath, basintype));
+    load(sprintf('%stotal_results/total_results_%s', datapath, basintype));
     disptable = struct();
     disptable.sts_types = {'MT'; 'N'; 'QS'; 'total'};
     

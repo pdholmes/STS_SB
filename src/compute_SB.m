@@ -35,7 +35,7 @@ controller = load(sprintf('controller_models/subject%s/subject%s_%s_controller_%
 options.uTransVec = zeros(controller.nInput, length(controller.u_x));
 u_zonoMat = zeros(controller.nInput, controller.nInput+1);
 switch options.basintype
-    case 'BFFFB'
+    case 'InputBounds'
         for i = 1:length(times_vec)
             options.uTransVec(:, i) = [0; controller.u_x{i}; 0; controller.u_y{i}];
         end
