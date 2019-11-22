@@ -2,7 +2,7 @@
 
 > Stability Basins for characterizing stability of sit-to-stand control strategies
 
-> paper: *insert link here*
+> paper: [https://arxiv.org/abs/1908.01876](https://arxiv.org/abs/1908.01876)
 
 > keywords: Sit-to-Stand, Biomechanics, Stability
 
