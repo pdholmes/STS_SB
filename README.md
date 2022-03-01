@@ -35,6 +35,7 @@ These predictions are compared to experimentally observed results.
 - R2019b
 ### Clone
 - Clone this repo to your local machine using `https://github.com/pdholmes/STS_SB`
+- Note that the version hosted on Deep Blue Data is commit# a28d7b3
 ### Downloads
 - To use this code, first download CORA 2018: https://tumcps.github.io/CORA/
 - More information about CORA and how to use it may be found here: https://tumcps.github.io/CORA/data/Cora2018Manual.pdf
